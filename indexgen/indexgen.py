@@ -8,7 +8,7 @@ def read_index_data(data_path):
     index_keywords = []
     with open(data_path) as data:
         for line in data:
-            index_keywords.append(line)
+            index_keywords.append(line.rstrip())
     return index_keywords
 
 
