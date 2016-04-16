@@ -11,3 +11,7 @@ class IndexGenTestCase(TestCase):
         data_path = path.join('indexgen', 'testing', 'data.txt')
         keywords = read_index_data(data_path)
         self.assertIn('foo\n', keywords)
+
+    def skip_existing_anchors(self):
+        # source text matches with existing anchors should be skipped
+        pass
